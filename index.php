@@ -206,10 +206,10 @@
                                         $realcount = 0;
                                         if($clientSteamID == "NO STEAMID") {
                                             $count = $kban->GetKbansNumber("", $clientIP);
-                                            $realcount = $Kban->GetRealKbansNumber($clientIP);
+                                            $realcount = $kban->GetRealKbansNumber($clientIP);
                                         } else {
                                             $count = $kban->GetKbansNumber($clientSteamID);
-                                            $realcount = $Kban->GetRealKbansNumber($clientSteamID);
+                                            $realcount = $kban->GetRealKbansNumber($clientSteamID);
                                         }
 
                                         $dateA->setTimestamp($time_stamp_start);
